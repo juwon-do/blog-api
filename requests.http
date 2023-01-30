@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDQxODI5NTJ9._W25rTs_7yb6yy0k3sByYbYjz1lRBDcdPXZ8r_O6g60
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NzUxOTUxMTZ9.x9PpI3DLpsHg_Ul6yPKmSG4-nwRfy-Pi9midsdzL404
 
 ### Users create (signup)
 POST http://localhost:3000/users
@@ -37,11 +37,13 @@ Content-Type: application/json
 GET http://localhost:3000/posts/1.json
 
 ### Posts update
-PATCH http://localhost:3000/posts/10
+PATCH http://localhost:3000/posts/9
 Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
+  "title": "Hello",
+  "body": "Hello body",
   "image": "test"
 }
 

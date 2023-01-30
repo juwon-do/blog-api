@@ -27,9 +27,9 @@ class PostsController < ApplicationController
 
   def update
     post = Post.find_by(id: params[:id])
-    post.title = params[:title] || post.title
-    post.body = params[:body] || post.body
-    post.image = params[:image] || post.image
+    post.title = params[:title] 
+    post.body = params[:body] 
+    post.image = params[:image] 
     if post.save
       render json: post
     else
